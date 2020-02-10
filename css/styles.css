@@ -1,0 +1,563 @@
+body {
+    font-family: Roboto, sans-serif, Arial;
+    background-color: aliceblue;
+    position: relative;
+    margin: 0;
+    min-height: 100%; /* 1 */
+    display: flex; /* 2 */
+    flex-direction: column; /* 3 */
+    overflow-x: hidden;
+
+}
+
+
+/* Menu de naviguation */
+/* Rappel mettre position:fixed */
+#nav-bar {
+    display: flex;
+    justify-content: space-around;
+    font-family: Roboto, Arial, serif;
+    box-shadow: 2px 2px 30px #888888;
+    width: 100%;
+    background: rgb(9, 9, 121);
+    background: rgba(0, 65, 79, 0.8);
+    z-index: 1;
+    position: fixed;
+    margin-top: -8px;
+
+
+}
+
+#nav-bar ul {
+    display: flex;
+    flex-wrap: wrap;
+
+
+}
+
+#nav-bar li {
+    list-style-type: none;
+    margin-top: 30px;
+    margin-left: 30px;
+
+
+}
+
+#nav-bar .Logo-nav {
+    display: flex;
+    justify-content: center;
+
+}
+
+.Logo-nav {
+    width: 10%;
+
+
+}
+
+
+#nav-bar .texte-nav {
+    display: flex;
+    text-decoration: none;
+    font-size: 1.4rem;
+    margin-right: 20px;
+    color: #d4d4d5;
+    border-top: 1px solid transparent;
+
+}
+
+#nav-bar .texte-nav:hover {
+
+    Color: #00a2bf;
+    border-top: 1px solid #00a2bf;
+    transition: all ease-in-out .5s;
+
+}
+
+/* Presentation */
+#presentation {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    animation: SlideDown 1.5s;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 9%;
+
+
+}
+
+
+.Logo-nav img {
+    width: 100px;
+    height: 100px;
+
+}
+
+.Logo-nav img:hover {
+    width: 110px;
+    height: 110px;
+    transition: 0.5s;
+
+
+}
+
+
+/* scolling */
+html {
+    scroll-behavior: smooth;
+
+}
+
+
+/* Experience.brussels debut */
+/* Grande image & texte de l'image */
+.slider img {
+    width: 100%;
+    padding-top: 100px;
+
+
+}
+
+/* Experience.brussels fin */
+/* interview debut*/
+#photophp {
+    width: 15%;
+    border-radius: 15%;
+    box-shadow: 2px 2px 200px 2px;
+
+
+}
+
+#photophp:hover {
+    transform: perspective(200px) rotateX(65deg);
+    transition: 7s;
+}
+
+#interview {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: SlideDown 1.5s;
+    margin-top: 100px;
+    font-family: 'Source Serif Pro', serif;
+
+}
+
+#interview p {
+    width: 50%;
+    justify-content: center;
+    font-size: 1.3em;
+    text-align: center;
+
+}
+
+#interview h2 {
+    font-size: 1.9em;
+    width: 50%;
+    justify-content: center;
+    display: flex;
+
+}
+
+#interview h3 {
+    font-size: 1.6em;
+
+}
+
+#interview ul {
+    font-size: 1.3em;
+
+}
+
+#lexique {
+    display: flex;
+    padding-top: 100px;
+    border: 5px solid;
+    box-shadow: 2px 2px 22px 2px;
+
+
+}
+
+#brusselexperience {
+    display: flex;
+    width: 100%;
+
+
+}
+
+#brusselexperience h1 {
+    font-size: 300%;
+
+}
+
+#brusselexperience p {
+    width: 50%;
+    font-size: 120%;
+}
+
+.test-brussel {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.test-brussel h1 {
+    font-family: 'Pacifico', cursive;
+
+
+}
+
+#galerie h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 300%;
+}
+
+.sous-titre {
+    text-decoration: underline;
+    font-weight: bold;
+
+
+}
+
+
+.contenair-galerie {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+
+
+}
+
+.image-galerie img {
+    width: 380px;
+    height: 300px;
+
+}
+
+#galerie {
+
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.texte-galerie {
+    position: absolute;
+    width: 380px;
+    height: 100px;
+    margin-top: -104px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    opacity: 0;
+    transition: .5s;
+    font-family: 'Pacifico', cursive;
+}
+
+.image-galerie:hover .texte-galerie {
+    opacity: 1;;
+
+}
+
+img.piss {
+    width: 60px;
+    height: 60px;
+    margin-right: -41px;
+    margin-left: 5px;
+
+
+}
+
+.img-galerie {
+    width: 200px;
+    height: 200px;
+    padding-bottom: 50px;
+}
+
+/* interview fin */
+
+
+p {
+
+    color: black;
+}
+
+@keyframes SlideDown {
+    from {
+        transform: translateY(200px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+
+    }
+
+}
+
+.img-presentation img {
+    height: 250px;
+    margin-top: 120px;
+    border-radius: 25%;
+
+
+}
+
+.img-presentation:hover {
+    transform: perspective(200px) rotateX(65deg);
+    transition: 7s;
+
+}
+
+fieldset {
+    position: relative;
+    margin-left: 75%;
+    background-color: rgba(255, 255, 255, 0.8);
+    right: 50px;
+    bottom: -30px;
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+
+
+}
+
+iframe {
+    width: 100%;
+    height: 110%;
+    position: absolute;
+    top: 13%;
+}
+
+#Formulaire {
+
+    padding-top: 110px;
+    min-width: 100%;
+    margin-bottom: 0;
+
+}
+
+button {
+    background-color: #5cabd3;
+    border-style: solid;
+    border-color: #5cabd3;
+    max-width: 30%;
+    border-radius: 3px;
+    border-width: 10px;
+    box-shadow: 1px 3px 3px #4395b9;
+    color: white;
+    font-weight: bold;
+
+}
+
+button:hover {
+
+    width: 40%;
+    transition: .5s;
+}
+
+.alert_errors {
+    color: white;
+    background-color: red;
+    width: 75%;
+}
+
+.alert_sucess {
+    background-color: green;
+    color: white;
+    width: 60%;
+}
+
+
+footer {
+    height: 170px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 65, 79, 1);
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+
+}
+
+footer a {
+    text-decoration: none;
+    font-size: 1.1em;
+    color: #d4d4d5;
+}
+
+footer a:hover {
+
+    Color: #00a2bf;
+    transition: all ease-in-out .5s;
+
+}
+
+footer p {
+    margin: 0;
+    padding: 0;
+
+}
+
+#menufoot {
+    align-self: center;
+
+}
+
+#menufoot img {
+    width: 100%;
+}
+
+#menufoot img:hover {
+    width: 110%;
+    transition: 0.5s;
+}
+
+#logo-foot {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+#foot {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 65, 79, 1);
+    color: white;
+    justify-content: center;
+    display: flex;
+    height: 170px;
+}
+
+#menufoot {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    background-color: rgba(0, 65, 79, 1);
+
+}
+
+#menufoot ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+#nav-foot {
+    padding-left: 30px;
+}
+
+/* Style the Image Used to Trigger the Modal */
+#img {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#myImg:hover {
+    opacity: 0.7;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(0)
+    }
+    to {
+        transform: scale(1)
+    }
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+@media only screen and (max-width: 700px) {
+    .modal-content {
+        width: 100%;
+    }
+}
+
+#logobxl {
+    width: 20%;
+
+}
+
+#lienbrussel {
+    text-decoration: none;;
+
+}
