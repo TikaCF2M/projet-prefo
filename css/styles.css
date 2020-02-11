@@ -571,7 +571,8 @@ footer p {
     }
     fieldset {
         position: relative;
-        margin-left: 75%;
+        right:50%;
+
     }
 
 
