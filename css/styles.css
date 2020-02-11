@@ -120,6 +120,7 @@ html {
 
 }
 
+
 /* Experience.brussels fin */
 /* interview debut*/
 #photophp {
@@ -550,6 +551,31 @@ footer p {
     .modal-content {
         width: 100%;
     }
+    div.mySlides:nth-child(1) > img:nth-child(2) {
+        display: none;
+    }
+    .test-brussel {
+        margin-top: 57px;
+    }
+    .Logo-nav > a:nth-child(1) > img:nth-child(1) {
+        display: none;
+    }
+    #navigation > ul:nth-child(1) {
+        font-size: 1em;
+    }
+    iframe{
+        display: none;
+    }
+    #foot{
+        display: flex;
+    }
+    fieldset {
+        position: relative;
+        margin-left: 75%;
+    }
+
+
+
 }
 
 #logobxl {
